@@ -21,9 +21,9 @@ app.use((req, res, next) => {
 });
 
 //app.use excutes in order, so if serving static files app.use if above the maintenance app.use, it is going to work anyway
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+// });
 
 //__dirname stores the path to the project directory "node-web-server"
 app.use(express.static(__dirname + '/public'));
